@@ -1,0 +1,18 @@
+{% extends 'base/base.html' %}
+{% block titulo %}
+    Inicio
+{% endblock titulo %}
+{% block contenido %}
+<section class="container">
+    <a href="{% url 'index' %}"> Volver al inicio</a>
+    <form action="">
+        <div class="d-flex justify-content-center">
+            <div class="d-flex justify-content-center flex-column w-25">
+                <label for="Usuario">Usuario</label><input type="text" name="Usuario" class="form-control">
+                <label for="Pass">Contraseña</label><input type="text" name="Pass" class="form-control">
+                <button type="submit" class="btn btn-primary">Entrar</button>
+            </div>
+        </div>
+    </form>
+</section>
+{% endblock contenido %}
