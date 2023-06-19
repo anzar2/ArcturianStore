@@ -80,9 +80,9 @@ WSGI_APPLICATION = 'arcturian.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'alorozas',
-        'USER': 'alo.rozas',
-        'PASSWORD': 'Alo.rozas_2023',
+        'NAME': 'fercatalan',
+        'USER': 'fer.catalan',
+        'PASSWORD': 'Fer.catalan_2023',
         'HOST': '164.152.54.1',
         'PORT': 3306
     }

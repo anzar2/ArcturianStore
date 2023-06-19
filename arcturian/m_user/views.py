@@ -1,16 +1,17 @@
 from django.shortcuts import render
-from .forms import (
-    FormularioUsuarioRegistro,
-    FormularioUsuarioLogin,
-)
+# from .forms import (
+#     FormularioUsuarioRegistro,
+#     FormularioUsuarioLogin,
+# )
 # Create your views here.
 
 
 def crear_usuario(request):
     if request.method=='GET':
-        contexto={
-            'formularioCreacion':FormularioUsuarioRegistro()
-        }
+        # contexto={
+        #     'formularioCreacion':FormularioUsuarioRegistro()
+        # }
+        pass
     if request.method=='POST':
         pass
     return render(request,'registrar.html')
@@ -18,8 +19,9 @@ def crear_usuario(request):
 
 def ingreso_usuario(request):
     if request.method=='GET':
-        contexto={
-            'formularioCreacion':FormularioUsuarioLogin()
-        }
+        pass
+        # contexto={
+        #     'formularioCreacion':FormularioUsuarioLogin()
+        # }
 
     return render(request,'login.html')
