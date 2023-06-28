@@ -1,15 +1,15 @@
 {% load static %}
-<nav class="bg-dark navbar" nav-type="Escritorio">
+<nav class="navbar" nav-type="Escritorio">
     <ul class="nav row w-100">
         <li class="navbar-item col-3" name="logo-container">
             <a href="" ><img name="logo" src="{% static 'img/arcturian-logo.png' %}" alt=""></a>
         </li>
         <li class="navbar-item col-3" name="search-input">
-            <label for="search" class="search-logo"><img src="{% static 'svg/search.svg' %}" alt=""></label><input name="search" type="search" class="form-control" id="search" autocomplete="off">
+            <label for="search" class="search-logo"><img src="{% static 'svg/search.svg' %}" alt=""></label><input name="search" type="search" class="form-control" id="search" placeholder="Buscar" autocomplete="off">
         </li>
         <li class="navbar-item col-3" name="user-nav">
-            <button name="mi-mazo" class="btn btn-primary"><img src="{% static 'svg/cards.svg' %}" alt=""> Mi mazo</button>X
-            <button name="cuenta-icon"><img src="{% static 'svg/person-circle.svg' %}" alt=""></button>X
+            <button name="mi-mazo" class="btn btn-primary"><img src="{% static 'svg/cards.svg' %}" alt=""> Mi mazo</button>
+            <button name="cuenta-icon"><img src="{% static 'svg/person-circle.svg' %}" alt=""></button>
         </li>
     </ul>
 </nav>

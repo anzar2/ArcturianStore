@@ -1,0 +1,52 @@
+.side-navbar{
+    position: fixed;
+    top: 110px;
+    height: 80vh;
+    border-radius: 10px;
+    width: 250px;
+    background-color: #2e3338;
+}
+.content{
+    background-color: #2e3338;
+    position: relative;
+    top: 87px;
+    margin-left: 270px;
+    max-width: 670px;
+}
+.chat{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    top: 87px;
+}
+a[name="Chat"]{
+    position: fixed;
+    bottom: 0;
+    background-color: #565a5c;
+    color: #888f92;
+    border: none;
+    max-height: 40px;
+    padding: 0px 10px;
+    max-height: 30px;
+
+}
+div[name="Chat"]{
+    display: flex;
+    justify-content: center;
+    max-width: 180px;
+    /* max-height: 100px; */
+    margin-bottom: 40px;
+    position: fixed;
+    bottom: 0;
+    z-index: 9999;
+
+}
+.chat{
+    height: 100vh;
+}
+
+@media (max-width: 1170px){
+    .chat{
+        display: none;
+    }
+}
