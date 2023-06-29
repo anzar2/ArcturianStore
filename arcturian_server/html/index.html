@@ -2,121 +2,35 @@
 {% block titulo %}Index{%endblock titulo%}
 {% load static %}
 {% block contenido %}
-    <header>
-        {% include 'base/navbar_base.html' %}
-    </header>
-    <main class="container">
-        <section class="row">
-            <section class="side-navbar col-3 ">Hola :D</section>
-            <section class="col-8 offset-3 content">
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-                LASKJDS
-            </section>
-            <section class=" col chat">
-                <p>
-                    <a class="btn btn-primary" name="Chat" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                      Chat
-                    </a>
-                  </p>
-                  <div name="Chat" class="collapse multi-collapse" id="collapseExample">
-                    <div class="card card-body">
-                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                    </div>
-                  </div>
-            </section>
+<header>
+  {% include 'base/navbar_base.html' %}
+</header>
+<main class="container">
+  <section class="row">
+    <section class="side-navbar col-3 ">Hola :D</section>
+    <section class="col-8 offset-3 content">
+      <h5 class="text-white">Inicio</h5>
+      <form action="">
+        <section class="publicacion">
+          <input type="text" class="w-100 h-100 publicacion-input" placeholder="¿Qué quieres decir?">
+          <div class="publicacion-misc">
+              
+          </div>
         </section>
-    </main>
+      </form>
+    </section>
+    <section class="col chat">
+
+      <a name="Chat" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+        aria-controls="collapseExample">
+        Chat
+      </a>
+      <div name="Chat" class="collapse" id="collapseExample">
+        <div class="card card-body dark">
+          *Chat *
+        </div>
+      </div>
+    </section>
+  </section>
+</main>
 {% endblock contenido %}

@@ -12,6 +12,7 @@
     top: 87px;
     margin-left: 270px;
     max-width: 670px;
+    padding: 0px 38px;
 }
 .chat{
     display: flex;
@@ -20,6 +21,7 @@
     top: 87px;
 }
 a[name="Chat"]{
+    text-decoration: none;
     position: fixed;
     bottom: 0;
     background-color: #565a5c;
@@ -44,7 +46,25 @@ div[name="Chat"]{
 .chat{
     height: 100vh;
 }
-
+.dark{
+    background-color: #2e3338;
+    color: white;
+}
+.publicacion{
+    height: 140px;
+}
+.publicacion-input{
+    border-radius: 10px;
+    background-color: #565a5c;
+    color: white;
+    border: none;
+    outline: none;
+    text-align: center;
+    
+}
+.publicacion-misc{
+    background-color: #2e3338;
+}
 @media (max-width: 1170px){
     .chat{
         display: none;
