@@ -2,7 +2,7 @@
 <nav class="navbar" nav-type="Escritorio">
     <ul class="nav row w-100">
         <li class="navbar-item col-3" name="logo-container">
-            <a href="" ><img name="logo" src="{% static 'img/arcturian-logo.png' %}" alt=""></a>
+            <a href="{% url 'index'%}" ><img name="logo" src="{% static 'img/arcturian-logo.png' %}" alt=""></a>
         </li>
         <li class="navbar-item col-3" name="search-input">
             <label for="search" class="search-logo"><img src="{% static 'svg/search.svg' %}" alt=""></label><input name="search" type="search" class="form-control" id="search" placeholder="Buscar" autocomplete="off">

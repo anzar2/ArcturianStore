@@ -17,10 +17,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from .views import (
-    m_index
+    m_index,
+    m_creacion_cuenta,
+    m_cartas
 )
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', m_index, name='index')
+    path('', m_index, name='index'),
+    path('crear_cuenta/',m_creacion_cuenta,name='crear_cuenta'),
+    path('cartas/',m_cartas,name='cartas')
 ]
