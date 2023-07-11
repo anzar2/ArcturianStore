@@ -19,12 +19,22 @@ from django.urls import path
 from .views import (
     m_index,
     m_creacion_cuenta,
-    m_cartas
+    m_cartas,
+    m_login,
+    cerrar_sesion,
+    m_mazo,
+    m_añadir_mazo,
+    m_eliminar_mazo
 )
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', m_index, name='index'),
+    path('login/',m_login,name='login'),
     path('crear_cuenta/',m_creacion_cuenta,name='crear_cuenta'),
-    path('cartas/',m_cartas,name='cartas')
+    path('cartas/',m_cartas,name='cartas'),
+    path('cerrar_sesion/',cerrar_sesion,name='cerrar_sesion'),
+    path('mazo/',m_mazo,name='mazo'),
+    path('mazo/agregar',m_añadir_mazo,name='agregar_mazo'),
+    path('mazo/eliminar/<int:id_mazo>/',m_eliminar_mazo,name='eliminar_mazo'),
 ]

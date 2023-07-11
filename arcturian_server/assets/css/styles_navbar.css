@@ -8,7 +8,8 @@
     width: 100%;
     z-index: 999;
     padding: 0px !important;
-    background-color: #2e3338;
+    /* background-color: #2e3338; */
+    background-color: #333232;
     border-bottom: 1px solid #414850;
 }
 .navbar-item{
@@ -41,7 +42,7 @@ img[name="logo"]{
     padding: 10px 10px;
 }
 .form-control#search, .form-control#search:focus {
-    background-color: #565a5c;
+    background-color: #4D4A4A;
     padding: 6px 10px;
     border: none;
     border-radius: 0px 10px 10px 0px;
@@ -59,24 +60,24 @@ img[name="logo"]{
 }
 .search-logo{
     padding: 6px 10px;
-    background-color: #565a5c;
+    background-color: #4D4A4A;
     /* border: rgb(255, 68, 183) solid 1px; */
     border-radius: 10px 0px 0px 10px;
 }
-button[name="mi-mazo"]{
-    background-color: #565a5c;
+a[name="mi-mazo"], a[name="ingresar"]{
+    background-color: #373737;
     color: #888f92;
     border: none;
     max-height: 40px;
     padding: 0px 10px;
     max-height: 30px;
 }
-button[name="mi-mazo"]:hover{
+a[name="mi-mazo"]:hover, a[name="ingresar"]:hover{
     background-color: #565a5c;
     color: white;
     border: none;
 }
-button[name="mi-mazo"]:active{
+a[name="mi-mazo"]:active, a[name="ingresar"]:active{
     background-color: #444749 !important;
 }
 img[name="mi-mazo"]:hover{

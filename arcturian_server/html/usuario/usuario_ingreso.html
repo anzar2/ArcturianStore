@@ -1,4 +1,30 @@
 {% extends 'base/base.html' %}
-{% block titulo %}Creación de Cuenta{%endblock titulo%}
+{% block titulo %}Ingreso Cuenta{%endblock titulo%}
 {% load static %}
 {% block contenido %}
+<main class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+    <section class="d-flex">
+        <div class="login-left-content dark mx-1 py-5 px-3" style="max-width: 250px;">
+            <h3>
+                Regístrate, comparte, vende, interactúa y compara tus mazos con otros usuarios de la comunidad de Mitos
+                y Leyendas
+            </h3>
+            <div class="">
+                <a href="{% url 'crear_cuenta'%}" class="btn btn-primary">Crea una cuenta</a>
+                <a href="{% url 'index' %}" class="btn btn-primary">Volver a inicio</a>
+            </div>
+        </div>
+        <div class="login-right-content dark mx-1" style="padding: 100px;">
+            <form action="" method="post" class="d-flex flex-column justify-content-between h-100">
+                {% csrf_token %}
+                <h3 class="text-light">Iniciar sesion</h3>
+                <div>
+                    {{formulario}}
+                    <a href="">¿Olvidaste tu contraseña?</a>
+                </div>
+                <button class="btn btn-primary .text-white" type="submit">Ingresar</button>
+            </form>
+        </div>
+    </section>
+</main>
+{% endblock contenido %}

@@ -7,20 +7,19 @@
 </header>
 <main class="container">
   <section class="row">
-    <section class="side-navbar col-3 ">Hola :D</section>
+    {% include 'base/side_nav.html' %}
     <section class="col-8 offset-3 content">
-      <h5 class="text-white">Inicio</h5>
+      <h5 class="color-text-dark">Inicio</h5>
       <form action="">
         <section class="publicacion">
           <input type="text" class="w-100 h-100 publicacion-input" placeholder="¿Qué quieres decir?">
           <div class="publicacion-misc">
-              
+              #
           </div>
         </section>
       </form>
     </section>
     <section class="col chat">
-
       <a name="Chat" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
         aria-controls="collapseExample">
         Chat

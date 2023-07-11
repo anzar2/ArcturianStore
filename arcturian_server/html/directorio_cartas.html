@@ -1,0 +1,48 @@
+{% extends 'base/base.html' %}
+{% block titulo %}Index{%endblock titulo%}
+{% load static %}
+{% block contenido %}
+<header>
+  {% include 'base/navbar_base.html' %}
+</header>
+<main class="container">
+  <section class="row">
+    {% include 'base/side_nav.html' %}
+    <section class="col-8 offset-3 content">
+      <h5 class="color-text-dark">Directorio cartas: Primer bloque</h5>
+      <section class="d-flex mb-3">
+        <div class="dropdown">
+          <button class="btn dropdown-toggle color-text-dark" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Tipo
+          </button>
+          <ul class="dropdown-menu dropdown-menu-dark">
+
+          </ul>
+        </div>
+        <div class="dropdown">
+          <button class="btn dropdown-toggle color-text-dark" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Año
+          </button>
+          <ul class="dropdown-menu dropdown-menu-dark">
+          </ul>
+        </div>
+      </section>
+      <h5 class="color-text-dark">Todas las cartas</h5>
+    </section>
+
+    <section class="col chat">
+      <a name="Chat" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+        aria-controls="collapseExample">
+        Chat
+      </a>
+      <div name="Chat" class="collapse" id="collapseExample">
+        <div class="card card-body dark">
+          *Chat *
+        </div>
+      </div>
+    </section>
+  </section>
+</main>
+{% endblock contenido %}

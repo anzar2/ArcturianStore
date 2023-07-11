@@ -1,0 +1,15 @@
+{% load static %}
+<section class="side-navbar col-3 ">
+    <nav class="d-flex align-items-between justify-content-between flex-column" style="height: 100%; padding: 20px;">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a name="home" href="{% url 'index' %}"><img src="{% static 'img/icons/home.png' %}" alt="">Inicio</a></li>
+            <li class="nav-item"><a name="notificaciones" href=""><img src="{% static 'img/icons/notificaciones.png' %}" alt=""> Notificaciones</a></li>
+            <li class="nav-item"><a name="cartas" href="{% url 'cartas' %}"><img src="{% static 'img/icons/cards.png' %}" alt=""> Directorio cartas</a></li>
+            <li class="nav-item"><a name="deseados" href=""><img src="{% static 'img/icons/fav.png' %}" alt=""> Lista de deseados</a></li>
+        </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item"><a name="support" href=""><img src="{% static 'img/icons/conf.png' %}" alt=""> Soporte</a></li>
+            <li class="nav-item"><a name="vender" href=""><img src="{% static 'img/icons/cart.png' %}" alt=""> Vender</a></li>
+        </ul>
+    </nav>
+</section>

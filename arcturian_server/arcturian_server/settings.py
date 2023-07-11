@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'arcturian_app'
 ]
 
 MIDDLEWARE = [
@@ -122,8 +123,11 @@ STATIC_URL = 'r/'
 STATICFILES_DIRS = [
     join(BASE_DIR, 'assets')
 ]
+MEDIA_URL = 'media/'
+MEDIA_ROOT = join(BASE_DIR, 'static', 'media')
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+LOGIN_URL = '/login/'

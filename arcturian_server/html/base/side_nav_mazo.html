@@ -1,0 +1,21 @@
+{% load static %}
+<section class="side-navbar col-3 ">
+    <nav style="height: 100%; padding: 20px;">
+        <h4 class="text-secondary fw-light mb-5">Mis mazos</h4>
+        <table class="table table-hover justify-content-center align-items-center table-borderless table-dark">
+            {% for mazo in mazos %}
+                <tr>
+                    <td style="padding:20px;">
+                        <a href="">{{mazo.nombre_mazo}} </a><a href="{% url 'eliminar_mazo' mazo.id %}" class="btn-sm">del</a>
+                    </td>
+                </tr>
+            {%endfor%}
+            <tr>
+                <td class="d-flex">
+                   <a href="{% url 'agregar_mazo' %}" class="w-100 text-center" style="font-size: large;">+</a>
+                </td>
+            </tr>
+        </table>
+        <span class="text-secondary fw-light mb-5">Solo se permiten 5 mazos por usuario</span>
+    </nav>
+</section>

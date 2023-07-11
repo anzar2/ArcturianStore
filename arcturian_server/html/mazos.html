@@ -1,0 +1,35 @@
+{% extends 'base/base.html' %}
+{% block titulo %}Index{%endblock titulo%}
+{% load static %}
+{% block contenido %}
+<header>
+  {% include 'base/navbar_base.html' %}
+</header>
+<main class="container">
+  <section class="row">
+    {% include 'base/side_nav_mazo.html' %}
+    <section class="col-8 offset-3 content">
+        <section class="row d-flex justify-content-center">
+            <div class="card col-3 m-2">
+                Carta
+            </div>
+            <div class="card col-3 m-2">
+                Carta
+            </div>
+            <div class="card col-3 m-2">
+                Carta
+            </div>
+            <div class="card col-3 m-2">
+                Carta
+            </div>
+            <div class="card col-3 m-2">
+                Carta
+            </div>
+            <div class="card col-3 m-2">
+                Carta
+            </div>
+        </section>
+    </section>
+  </section>
+</main>
+{% endblock contenido %}
