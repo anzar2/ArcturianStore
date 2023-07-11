@@ -1,0 +1,44 @@
+{% extends 'base/base.html' %}
+{% block titulo %}Creación de Cuenta{%endblock titulo%}
+{% load static %}
+{% block contenido %}
+<br><br><br><br><br>
+<header>
+    {% include 'base/navbar_base.html' %}
+  </header>
+
+
+<div
+      class="contenedor-login d-flex justify-content-center align-items-center"
+    >
+      <div class="container login col-12 col-md-6">
+        <div class="row">
+          <div class="col-12">
+            <div class="card shadow">
+              <div class="card-body">
+                <h2>Registro de Usuario</h2>
+                <hr />
+                <form method="post">
+                  {% csrf_token %}
+                  {{formulario}}
+                  <div class="d-flex justify-content-between">
+                    <a href="{% url 'index'%}" class="btn btn-secondary">Volver al Home</a>
+                    <a href="{% url 'index' %}" class="btn btn-secondary"
+                      >Iniciar Sesión</a
+                    >
+                    <input
+                      class="btn btn-primary"
+                      type="submit"
+                      value="Registrar"
+                    />
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+{% endblock contenido %}
